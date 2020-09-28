@@ -1,13 +1,13 @@
-import {gsap} from "gsap";
+// import {gsap} from "gsap";
 
-// var redSpeed = 1;
-var blueSpeed = 1;
+// // var redSpeed = 1;
+// var blueSpeed = 1;
 
-var demoTimeline = gsap.timeline();
+// var demoTimeline = gsap.timeline();
 
-demoTimeline.to(".red-box",{duration: blueSpeed, x: 300})
-        .to(".orange-box",{duration: blueSpeed, x: 300})
-        .to(".blue-box",{duration: 3, x: 300});
+// demoTimeline.to(".red-box",{duration: blueSpeed, x: 300})
+//         .to(".orange-box",{duration: blueSpeed, x: 300})
+//         .to(".blue-box",{duration: 3, x: 300});
 
 // TweenMax.to(".red-box",redSpeed, {x: 300, borderRadius: "50px", alpha: 0});
 // TweenLite.to(".red-box",redSpeed,{x:800, borderRadius: "200px", delay: redSpeed});

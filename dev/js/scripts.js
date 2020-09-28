@@ -9,8 +9,13 @@ import {orangeBoxAnimation} from './orangeBox.js';
 //console.log(redBoxAnimation);
 
 
-var mainTL = gsap.timeline();
+var mainTL = gsap.timeline({paused:true});
 
 mainTL.add(redBoxAnimation())
+        //.addLabel("blue")
+        .addPause()
         .add(blueBoxAnimation())
-        .add(orangeBoxAnimation());
+       
+        .add(orangeBoxAnimation())
+        .seek("blue")
+        .play();
