@@ -426,6 +426,21 @@ textarea {
 /* =============
     Demo
 ============= */
+#demo-container {
+  display: grid;
+  grid-template-columns: auto 50% auto;
+  grid-template-areas: ". demo .";
+}
+#demo-container > div {
+  grid-area: demo;
+  height: 100vh;
+}
+#demo-container > div ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .box {
   height: 200px;
   width: 200px;
@@ -438,4 +453,8 @@ textarea {
 
 .blue-box {
   background-color: #167cd0;
+}
+
+.orange-box {
+  background-color: #f0a433;
 }

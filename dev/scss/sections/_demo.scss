@@ -2,6 +2,23 @@
     Demo
 ============= */
 
+#demo-container{
+    display: grid;
+    grid-template-columns: auto 50% auto;
+    grid-template-areas: ". demo .";
+
+    >div{
+        grid-area: demo;
+        height: 100vh;
+
+        ul{
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
 .box{
     height: 200px;
     width: 200px;
@@ -14,4 +31,8 @@
 
 .blue-box{
     background-color: $blue;
+}
+
+.orange-box{
+    background-color: $orange;
 }
