@@ -2,16 +2,21 @@
     Demo
 ============= */
 
-.box{
-    height: 200px;
-    width: 200px;
-    margin-bottom: 300px;
-}
+#svg-demo{
+    display: grid;
+    grid-template-columns: auto 50% auto;
+    grid-template-areas: ". svg .";
+    >div{
+        grid-area: svg;
+        border: 3px solid aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
 
-.red-box{
-    background-color: $red;
-}
-
-.blue-box{
-    background-color: $blue;
+        svg{
+            border:3px solid #000;
+            // width: 100%;
+        }
+    }
 }

@@ -1,4 +1,5 @@
-import * as Demo from './demo.js';
+import gsap from "gsap/gsap-core"
+import {redBoxAnimation} from "./demo.js"
 
-// this will keep CodeKit quite!
-console.log(Demo);
+const mainTL = gsap.timeline();
+mainTL.add(redBoxAnimation());
