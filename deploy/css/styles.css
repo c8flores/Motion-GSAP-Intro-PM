@@ -441,3 +441,6 @@ textarea {
 #spooky-container > div svg {
   width: 100%;
 }
+#spooky-container > div svg #foreground {
+  display: none;
+}
