@@ -54,12 +54,28 @@
 		"oAP": "/dev/content/background/background.html",
 		"oF": 0
 		},
+	"/dev/content/foreground/back.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/foreground/back.html",
+		"oF": 0
+		},
 	"/dev/content/foreground/foreground.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/foreground/foreground.html",
+		"oF": 0
+		},
+	"/dev/content/foreground/middle.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/foreground/middle.html",
 		"oF": 0
 		},
 	"/dev/content/spooky-svg.kit": {
@@ -93,6 +109,17 @@
 		"oA": 0,
 		"oAP": "/deploy/index.html",
 		"oF": 2
+		},
+	"/dev/js/background/background-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dev/js/background/background-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/dev/js/background/background.js": {
 		"bF": 0,
