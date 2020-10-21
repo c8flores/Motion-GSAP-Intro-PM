@@ -1,0 +1,1 @@
+import{gsap}from"gsap";const backgroundTL=gsap.timeline();backgroundTL.from("#moon",{duration:3,y:1e3});export function backgroundAnimation(){return backgroundTL}
