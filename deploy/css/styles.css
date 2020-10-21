@@ -426,16 +426,18 @@ textarea {
 /* =============
     Demo
 ============= */
-.box {
-  height: 200px;
-  width: 200px;
-  margin-bottom: 300px;
+#spooky-container {
+  display: grid;
+  grid-template-columns: auto 60% auto;
+  grid-template-areas: ". spooky .";
 }
-
-.red-box {
-  background-color: #f13232;
+#spooky-container > div {
+  grid-area: spooky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
-.blue-box {
-  background-color: #167cd0;
+#spooky-container > div svg {
+  width: 100%;
 }

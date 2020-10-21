@@ -1,0 +1,21 @@
+/* =============
+    Demo
+============= */
+
+#spooky-container{
+    display: grid;
+    grid-template-columns: auto 60% auto;
+    grid-template-areas: ". spooky .";
+
+    >div{
+        grid-area: spooky;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        svg{
+            width: 100%;
+        }
+    }
+}
