@@ -1,8 +1,6 @@
 import gsap from "gsap";
 
-
 const starsTL = gsap.timeline();
-
 
 export function starAnimation(){
     starsTL.from(".stars",{duration:0.5, alpha:0, stagger:-0.25});
