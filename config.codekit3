@@ -62,6 +62,14 @@
 		"oAP": "/dev/content/foreground/back.html",
 		"oF": 0
 		},
+	"/dev/content/foreground/cat.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/foreground/cat.html",
+		"oF": 0
+		},
 	"/dev/content/foreground/foreground.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -70,12 +78,28 @@
 		"oAP": "/dev/content/foreground/foreground.html",
 		"oF": 0
 		},
+	"/dev/content/foreground/grass.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/foreground/grass.html",
+		"oF": 0
+		},
 	"/dev/content/foreground/middle.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/foreground/middle.html",
+		"oF": 0
+		},
+	"/dev/content/foreground/sky.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/foreground/sky.html",
 		"oF": 0
 		},
 	"/dev/content/spooky-svg.kit": {
@@ -110,17 +134,6 @@
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
-	"/dev/js/background/background-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/background/background-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/dev/js/background/background.js": {
 		"bF": 0,
 		"ft": 64,
@@ -128,6 +141,39 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/background/background-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/foreground/cat.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/foreground/cat-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/foreground/middle-back.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/foreground/middle-back-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/foreground/sky.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/foreground/sky-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -140,17 +186,6 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/spooky-svg.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/spooky-svg-min.js",
-		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
