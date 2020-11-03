@@ -1,4 +1,14 @@
-import * as Demo from './demo.js';
+import gsap from "gsap";
+import { GSDevTools } from "gsap/GSDevTools";
+import { flamesAnimation } from "./rocket.js";
+import { rocketAnimation } from "./rocket.js";
 
-// this will keep CodeKit quite!
-console.log(Demo);
+gsap.registerPlugin(GSDevTools);
+
+flamesAnimation();
+
+const mainTL = gsap.timeline();
+mainTL.add(rocketAnimation());
+
+//instantiate GSDevTools with default settings
+//GSDevTools.create();
