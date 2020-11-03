@@ -5,10 +5,11 @@ import { rocketAnimation } from "./rocket.js";
 
 gsap.registerPlugin(GSDevTools);
 
+// call the function to start flame animation
 flamesAnimation();
 
 const mainTL = gsap.timeline();
 mainTL.add(rocketAnimation());
 
 //instantiate GSDevTools with default settings
-//GSDevTools.create();
+// GSDevTools.create();

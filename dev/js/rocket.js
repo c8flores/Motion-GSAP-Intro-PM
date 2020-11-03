@@ -12,17 +12,19 @@ gsap.set("#rocket", {
     //rotation:-180
 });
 
-gsap.set(".flames",{transformOrigin:"center top"})
+
 
 
 const rocketTL = gsap.timeline();
 
 export function rocketAnimation() {
 
-    //rocketTL.fromTo("#rocket",{y:"+=400"},{duration:2, y:"-300"});
+    // fromTo call
+    // rocketTL.fromTo("#rocket",{y:"+=400"},{duration:2, y:"-=1000"});
+
+
     rocketTL.to("#rocket", {
         duration: 10,
-        //rotation:55,
         scale:0.5,
         motionPath: {
             path: "#rocketPath",
@@ -36,9 +38,9 @@ export function rocketAnimation() {
     return rocketTL;
 }
 
+gsap.set(".flames",{transformOrigin:"center top"});
 
-
-const rocketFlamesTL = gsap.timeline({yoyo:true, repeat:10});
+const rocketFlamesTL = gsap.timeline({yoyo:true, repeat:15});
 
 export function flamesAnimation(){
     rocketFlamesTL.to("#middle-orange",{duration:0.5, ease: "none",scale:0.75},"flames")
