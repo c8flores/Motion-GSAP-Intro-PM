@@ -5,14 +5,19 @@ gsap.registerPlugin(GSDevTools);
 
 import {backgroundAnimation} from "./background/background.js";
 import {middleBackAnimation} from "./foreground/middle-back.js";
-import {catAnimation} from "./foreground/cat.js";
+//import {catAnimation} from "./foreground/cat.js";
 import {starAnimation} from "./foreground/sky.js";
 //import {cloudsAnimation} from "./foreground/sky.js"
 
-import {bat4Animaiton} from "./foreground/bats.js"
+import {bat4Animaiton} from "./foreground/bats.js";
+import {bat1Animation} from "./foreground/bats.js";
+import {batEyesAnimation} from "./foreground/bats.js";
 
 // play clouds Animation
 //cloudsAnimation();
+
+// make bat one fly
+bat1Animation();
 
 // made bat 4 fly
 bat4Animaiton();
@@ -21,7 +26,7 @@ const mainTL = gsap.timeline()
 mainTL.add(backgroundAnimation(),"spookyAnimation")
         .add(starAnimation(),"spookyAnimation")
         .add(middleBackAnimation(),"spookyAnimation")
-        .add(catAnimation());
+        .add(batEyesAnimation(),"-=3");
 
 //instantiate GSDevTools with default settings
 GSDevTools.create();
