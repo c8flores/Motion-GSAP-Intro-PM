@@ -9,12 +9,20 @@
 	],
 "creatorBuild": "33081",
 "files": {
-	"/assets/spooky.sketch": {
+	"/assets/monster.sketch": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/spooky.sketch",
+		"oAP": "/assets/monster.sketch",
+		"oF": 0
+		},
+	"/assets/morph-svg.sketch": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/morph-svg.sketch",
 		"oF": 0
 		},
 	"/deploy/css/styles.css": {
@@ -46,92 +54,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/content/background/background.kit": {
+	"/dev/content/demo.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/background/background.html",
-		"oF": 0
-		},
-	"/dev/content/foreground/back.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/foreground/back.html",
-		"oF": 0
-		},
-	"/dev/content/foreground/bats.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/foreground/bats.html",
-		"oF": 0
-		},
-	"/dev/content/foreground/cat.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/foreground/cat.html",
-		"oF": 0
-		},
-	"/dev/content/foreground/foreground.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/foreground/foreground.html",
-		"oF": 0
-		},
-	"/dev/content/foreground/grass.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/foreground/grass.html",
-		"oF": 0
-		},
-	"/dev/content/foreground/middle.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/foreground/middle.html",
-		"oF": 0
-		},
-	"/dev/content/foreground/sky.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/foreground/sky.html",
-		"oF": 0
-		},
-	"/dev/content/foreground/web-left.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/foreground/web-left.html",
-		"oF": 0
-		},
-	"/dev/content/foreground/web-right.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/foreground/web-right.html",
-		"oF": 0
-		},
-	"/dev/content/spooky-svg.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/spooky-svg.html",
+		"oAP": "/dev/content/demo.html",
 		"oF": 0
 		},
 	"/dev/global/head.kit": {
@@ -158,68 +86,13 @@
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
-	"/dev/js/background/background.js": {
+	"/dev/js/demo.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/dev/js/background/background-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/foreground/bats.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/foreground/bats-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/foreground/cat.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/foreground/cat-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/foreground/middle-back.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/foreground/middle-back-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/foreground/sky.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/foreground/sky-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/foreground/webs.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/foreground/webs-min.js",
+		"oAP": "/dev/js/demo-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -365,7 +238,7 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_spooky-svg.scss": {
+	"/dev/scss/sections/_demo.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -373,7 +246,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_spooky-svg.css",
+		"oAP": "/dev/scss/sections/_demo.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

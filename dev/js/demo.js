@@ -1,31 +1,30 @@
 import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin);
 
-const drawTL = gsap.timeline();
+MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
+
+// const morphTL = gsap.timeline();
+
+const monsterTL = gsap.timeline();
 
 
 export function drawAnimation(){
 
-    //drawTL.from("#box",{duration:2, drawSVG:"0%", ease:"none"});
+    // morphTL.to("#blue",{duration: 1, morphSVG:"#star", fill:"#650467"});
+    // return morphTL;
 
-    //drawTL.to("#box",{duration:2, drawSVG:"0%"});
-
-    //drawTL.to("#box",{duration:2, drawSVG:"20% 60%"});
-
-    //drawTL.to("#box",{duration:2, drawSVG:600});
-
-    //drawTL.to("#box",{duration:2, drawSVG:"10% 90%"});
-
-    //drawTL.to("#box",{duration:2, drawSVG:"-10% -90%"});
-
-    //drawTL.from("#box",{duration:2, drawSVG:"50% 50%"});
-
-    //drawTL.from("#box",{duration:2, drawSVG:"10% 50%"});
-
-    drawTL.fromTo("#box",{drawSVG:"0% 10%"},{duration:2, drawSVG: "90% 100%"})
-          .to("#box",{duration:2, drawSVG: "100%"});
-
-    return drawTL;
+    monsterTL.to("#dark-red-1",{duration: 1, morphSVG:"#dark-red-2", fill:"#242424"},"monster")
+            .from("#dark-red-1",{duration: 1,drawSVG:"0"})
+            .to("#light-red-1",{duration: 1, morphSVG:"#light-red-2" , fill:"#6e6e6e"},"monster")
+            .to("#left-eye-1",{duration: 1, morphSVG:"#left-eye-2", fill:"#fff"},"monster")
+            .to("#right-eye-1",{duration: 1, morphSVG:"#right-eye-2", fill:"#fff"},"monster")
+            .to("#mouth-1",{duration: 1, morphSVG:"#mouth-2", fill:"#fff"},"monster")
+            .to("#leg-1",{duration: 1, morphSVG:"#horn-1"},"monster")
+            .to("#leg-2",{duration: 1, morphSVG:"#horn-2"},"monster")
+            .to("#shadow-1",{duration: 1, morphSVG:"#shadow-2"},"monster")
+            //.to("#dark-red-1",{duration: 1, morphSVG:"#dark-red-1"});
+    return monsterTL;
 }

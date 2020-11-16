@@ -13,5 +13,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        #star{
+            visibility: hidden;
+        }
+
+        #monster-2{
+            visibility: hidden;
+        }
     }
 }
