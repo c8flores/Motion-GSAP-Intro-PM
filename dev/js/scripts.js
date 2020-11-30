@@ -1,4 +1,3 @@
-import * as Demo from './demo.js';
+import { speedCounter } from "./speed.js";
 
-// this will keep CodeKit quite!
-console.log(Demo);
+console.log(speedCounter);
